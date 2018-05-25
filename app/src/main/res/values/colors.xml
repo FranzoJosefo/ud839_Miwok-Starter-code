@@ -22,6 +22,9 @@
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
 
+    <!--Font color for each text in category-->
+    <color name="category_font">#FFFFFF</color>
+
     <!-- Background color for the numbers category -->
     <color name="category_numbers">#FD8E09</color>
 

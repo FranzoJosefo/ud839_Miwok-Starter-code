@@ -15,7 +15,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/primary_color</item>
         <item name="colorPrimaryDark">@color/primary_dark_color</item>
     </style>
@@ -25,40 +25,31 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/list_item_height</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
+
+    <style name="WordStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="ImageStyle">
+        <item name="android:layout_width">@dimen/list_item_height</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+    </style>
+
+    <style name="WordLinearLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
 </resources>
-
-
-    <?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" tools:context=".MainActivity">
-
-<SearchView android:id="@+id/searchViewHomePage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
-
-
-<ScrollView android:id="@+id/scrollViewID" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/searchViewHomePage">
-
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginBottom="16dp">
-
-        <TextView style="@style/categoryStyle" android:text="@string/podcasts_label" />
-
-        <TextView style="@style/categoryStyle" android:text="@string/playlists_label" />
-
-        <TextView style="@style/categoryStyle" android:text="@string/premium_label" />
-
-        <TextView style="@style/categoryStyle" android:text="@string/settings_label" />
-
-        <TextView style="@style/categoryStyle" android:text="@string/settings_label" />
-
-    </LinearLayout>
-</ScrollView>
-
-<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:background="@color/colorAccent" android:padding="8dp" android:gravity="center" android:text="Playing Now" android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" android:textColor="@android:color/white" />
-
-
-</RelativeLayout>
-
-
 

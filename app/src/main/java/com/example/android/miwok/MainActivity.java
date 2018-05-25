@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         TextView family = (TextView) findViewById(R.id.family);
         final TextView colors = (TextView) findViewById(R.id.colors);
         TextView phrases = (TextView) findViewById(R.id.phrases);
-
         // Set a click listener on that View
         numbers.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
