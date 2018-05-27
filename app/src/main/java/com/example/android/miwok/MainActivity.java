@@ -72,9 +72,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void openNumbersList(View view) {
-        //This is an implicit Intent, which opens the NumbersActivity.
-        Intent intent = new Intent(this, NumbersActivity.class);
-        startActivity(intent);
-    }
+//    public void openNumbersList(View view) {
+//        //This is an implicit Intent, which opens the NumbersActivity.
+//        Intent intent = new Intent(this, NumbersActivity.class);
+//        startActivity(intent);
+//    }
 }
