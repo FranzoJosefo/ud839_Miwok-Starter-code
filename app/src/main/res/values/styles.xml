@@ -52,5 +52,14 @@
         <item name="android:paddingLeft">16dp</item>
     </style>
 
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@color/primary_color</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabIndicatorColor">@color/category_font</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabTextColor">@color/tab_text_color</item>
+        <item name="tabSelectedTextColor">@color/category_font</item>
+    </style>
+
 </resources>
 
